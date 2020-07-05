@@ -9,12 +9,12 @@ As a default hashing function it is using the 32-bit hash function MurmurHash3_x
 
 One can define different HashingFunction implementations by implementing the analogous interface. 
 
-The default implementation is also trying to optimize the algorithm in terms of the bit array size and the number of hash functions that are used based on:
+The default implementation is also trying to optimize the algorithm in terms of the bit array size and the number of hash functions that are used based on the following:
 - <http://en.wikipedia.org/wiki/Bloom_filter#Probability_of_false_positives>
 and 
 - <https://en.wikipedia.org/wiki/Bloom_filter#Optimal_number_of_hash_functions>
 
-One can run the unit test by the simple command
+One can run the unit tests by the simple command
 ```bash
 mvn clean test
 ```
